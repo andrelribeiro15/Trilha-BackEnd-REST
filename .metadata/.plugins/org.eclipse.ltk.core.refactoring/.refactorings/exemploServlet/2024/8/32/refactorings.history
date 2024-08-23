@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;exemploServlet&apos; to &apos;br.com.gcontato.servlet&apos;&#x0D;&#x0A;- Original project: &apos;exemploServlet&apos;&#x0D;&#x0A;- Original element: &apos;exemploServlet/src/main/java/exemploServlet&apos;&#x0D;&#x0A;- Renamed element: &apos;exemploServlet/src/main/java/br.com.gcontato.servlet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;exemploServlet&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;exemploServlet" name="br.com.gcontato.servlet" qualified="false" references="true" stamp="1723074485339" textual="false" version="1.0"/>
+</session>

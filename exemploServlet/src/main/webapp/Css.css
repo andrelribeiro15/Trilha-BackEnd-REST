@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: #ff8080
+	
+}
+.inscrever{
+	
+	width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inscrever textarea{
+	
+	width: 300px;
+    resize: none;
+    height: 100px;
+    margin-top: 5px;
+}
