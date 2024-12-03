@@ -174,8 +174,9 @@ $(document).ready(function(){
 					"<td>R$ "+COLDIGO.formatarDinheiro(listaDeProdutos[i].valor)+"</td>" +
 					"<td>" +
 						"<a onclick=\"COLDIGO.produto.exibirEdicao('"+listaDeProdutos[i].id+"')\"><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
-						"<a onclick=\"COLDIGO.produto.excluir('"+listaDeProdutos[i].id+"')\"><img src='../../imgs/delete.png' alt='Excluir registro'></a>" + 
-					"</td>" + 
+						"<a onclick=\"COLDIGO.produto.excluir('"+listaDeProdutos[i].id+"')\"><img src='../../imgs/delete.png' alt='Excluir registro'></a>" +
+						//"<a <input type= checkbox name = checkbox></a>"+
+					"</td>" 
 					"</tr>"
 					
 			}
@@ -280,12 +281,13 @@ $(document).ready(function(){
 		
 		$.ajax({
 			type:"PUT",
-			url:COLDIGO.PATH + "produto/alterar",
+			url: COLDIGO.PATH + "produto/alterar",
 			data:JSON.stringify(produto),
 			success: function(msg){
 				
 				COLDIGO.exibirAviso(msg);
 				COLDIGO.produto.buscar();
+				alert("Estou aqui" + msg);
 				$("#modalEditaProduto").dialog("close");
 					
 			},

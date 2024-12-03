@@ -178,11 +178,13 @@ public class ProdutoRest extends UtilRest {
 			String msg = "";
 			if (retorno) {
 				msg = "Produto alterado com sucesso";
-				
+				System.out.println("Teste acerto aqui ");
 			}else {
+				System.out.println("Teste erro aqui ");
 				msg = "Erro ao alterar produto.";
 			}
 			
+			System.out.println(retorno);
 			conec.fecharConexao();
 			return this.buildResponse(msg);
 			

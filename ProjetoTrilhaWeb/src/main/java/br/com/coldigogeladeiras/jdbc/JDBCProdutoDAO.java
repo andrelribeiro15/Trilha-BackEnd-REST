@@ -207,6 +207,8 @@ public class JDBCProdutoDAO implements ProdutoDAO {
 			p.setInt(6, produto.getId());
 			p.executeUpdate();
 			
+			System.out.println(p);
+			
 		}catch (SQLException e) {
 			e.printStackTrace();
 			return false;

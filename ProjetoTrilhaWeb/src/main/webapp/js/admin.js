@@ -10,9 +10,15 @@ $(document).ready(function () {
     $("header").load("/ProjetoTrilhaWeb/pages/admin/general/header.html");
     $("footer").load("/ProjetoTrilhaWeb/pages/admin/general/footer.html");
 
-
+	//Função para carregamento de páginas de conteúdo, que 
+	//recebe como parametro o nome da pasta com a pagina a ser carregada
 
 	COLDIGO.carregaPagina = function (pagename) {  
+		//remove o conteudo criado na abertura de uma janela modal pelo jQueryUI
+		
+		if($(".ui-dialog"))
+			$(".ui-dialog").remove();
+		//Limpa a taga section, excluindo todo conteudo de dentro dela. 	
 	    $("section").empty();
 	    $("section").load(pagename + "/", function (response, status, info) {
 	        if (status == "error") {
